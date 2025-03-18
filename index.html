@@ -10,47 +10,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <style>
-      h1 {
-        font-size: 60;
-        font-family: Georgia, "Times New Roman", Times, serif;
-        color: #821919;
-      }
-      .navbar,
-      .nav-link,
-      .footer,
-      footer,
-      li,
-      li a {
-        background-color: #c2bb7c;
-        color: #821919;
-        font-family: Georgia, "Times New Roman", Times, serif;
-      }
-      .navbar-brand {
-        color: #821919;
-        font-size: xx-large;
-        font-family: Georgia, "Times New Roman", Times, serif;
-      }
-      .navbar .button {
-        background-color: rgba(255, 255, 255, 0.7);
-        color: #821919;
-      }
-      img {
-        max-width: 100%;
-        display: flex;
-        opacity: 60%;
-      }
-      header {
-        z-index: 1000;
-      }
-      #about {
-        text-align: center;
-      }
-      li,
-      li a {
-        list-style: none;
-      }
-    </style>
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg fixed-top">
@@ -96,18 +56,73 @@
         />
       </header>
     </div>
-
-    <div id="about">
-      <div class="container col-md-8 p-5 mx-auto">
+    <main>
+      <div class="col-md-8 p-5 mx-auto">
         <h1>
           Our mission is simple: to craft visually stunning, user-friendly, and
           high-performing websites that drive results.
         </h1>
         <h1>Let’s build something incredible together!</h1>
       </div>
-    </div>
 
-    <div></div>
+      <div class="container">
+        <div id="videos" class="row g-3 my-3 justify-content-center">
+          <div class="col-12 col-md-6 p-4">
+            <div class="video-container">
+              <video class="video-fluid" autoplay loop muted>
+                <source
+                  src="videos/Screen Recording 2025-03-17 at 22.13.51.mov"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 p-4">
+            <div class="video-container">
+              <video class="video-fluid" autoplay loop muted>
+                <source
+                  src="videos/Screen Recording 2025-03-17 at 22.06.55.mov"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+          <div class="d-flex mt-0 mb-4 justify-content-center">
+            <button class="btn btn">View full portfolio</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact" class="row g-3 p-3 p-md-5 mt-5">
+        <div class="col-12 col-md-5">
+          <br />
+          <h1>Available on</h1>
+          <h1>+467 12 345 678</h1>
+          <br />
+          <h1>Or swing by our office –</h1>
+          <h1>Kungsgatan 25, Gothenburg</h1>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2131.7406790533196!2d11.960831576988934!3d57.703875440053714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff3661ca84bfd%3A0x5e9e54e965f22bbc!2sKungsgatan%2025%2C%20411%2019%20G%C3%B6teborg%2C%20Sverige!5e0!3m2!1ssv!2s!4v1742288096970!5m2!1ssv!2s"
+              class="responsive-map"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <img
+          class="img-fluid"
+          src="images/Screenshot 2025-03-18 at 10.57.19.png"
+          alt="webdesign header office"
+        />
+      </div>
+    </main>
 
     <div class="footer">
       <footer class="ms-5 py-5 text-start">

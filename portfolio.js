@@ -1,14 +1,24 @@
-const paragraphs = document.querySelectorAll('.section__paragraph');
+const yFade = document.querySelectorAll('.section__yFade');
+
+const xFade = document.querySelectorAll('.section__xFade');
 
 document.addEventListener("scroll", function()
 {
-    paragraphs.forEach((paragraph) => 
+    yFade.forEach((element) => 
     {
-        if (isInView(paragraph))
+        if (isInView(element))
         {
-            paragraph.classList.add('section__paragraph--visible');
+            element.classList.add('section__yFade--visible');
         }
     });
+});
+
+xFade.forEach((element) => 
+{
+    if (isInView2(element))
+    {
+        element.classList.add('section__xFade--visible');
+    }
 });
 
 document.querySelectorAll('.fixed-card').forEach(card => {
@@ -29,6 +39,12 @@ function isInView(element)
 {
     const rect = element.getBoundingClientRect();
     return (rect.bottom > 0 && rect.top < (window.innerHeight - 150 || document.documentElement.clientHeight - 150));
+}
+
+function isInView2(element) 
+{
+    const rect = element.getBoundingClientRect();
+    return rect
 }
 
 function changeTheme(bgColor, textColor) {

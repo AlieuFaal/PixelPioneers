@@ -10,14 +10,17 @@ li a,
 main {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 h1 {
   font-size: 60;
   color: #821919;
 }
+
 h2 {
   font-size: 50;
   color: #821919;
 }
+
 .footer,
 .nav-link,
 .navbar,
@@ -27,47 +30,61 @@ li a {
   background-color: #c2bb7c;
   color: #821919;
 }
+
 .navbar-brand {
   color: #821919;
   font-size: xx-large;
 }
+
 .btn {
   background-color: rgba(141, 104, 104, 0.3);
   color: #d8d3d0;
 }
+
 .navbar .button {
   background-color: rgba(255, 255, 255, 0.7);
   color: #821919;
 }
+
 li,
 li a {
   list-style: none;
 }
+
 .demo-box {
   padding: 20px;
   transition: background-color 0.3s, color 0.3s;
   text-align: center;
 }
+
 .color-btn {
   margin-bottom: 15px;
   border: none;
   padding: 10px;
 }
+
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.section__header{
-  display: flex;
+.section__xFade{
+  transform: translateX(1000px);
+  opacity: 0;
+  transition: 2s ease;
 }
 
-.section__paragraph{
+.section__xFade--visible{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.section__yFade{
   transform: translateY(100px);
   opacity: 0;
   transition: 1s ease;
 }
 
-.section__paragraph--visible{
+.section__yFade--visible{
   transform: translateY(0);
   opacity: 1;
 }
@@ -108,3 +125,8 @@ p {
   top: 50%;
   transform: translateY(-50%);
 }
+
+/* @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+} */

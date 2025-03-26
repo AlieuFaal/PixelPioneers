@@ -59,3 +59,36 @@ body {
 p {
   font-size: 18px;
 }
+.showcase-container {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.showcase-item {
+  background: white;
+  border-radius: 8px;
+  height: 300px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.showcase-item-placeholder {
+  color: #6c757d;
+  font-size: 1.2rem;
+}
+
+.showcase-carousel-control-prev, .showcase-carousel-control-next {
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}

@@ -168,6 +168,141 @@
           </div>
         </div>
       </div>
+    </div>      
+    
+      <div class="container mt-5">
+        <h2>Funtionality and User Experience</h2>
+      <p>
+      We appreciate the value of websites with highly functional features
+      and always do our best to make sure the website is user friendly to 
+      guarantee customer satisfaction. Examples include sliders to showcase 
+      services, interactive grids and much more.
+      </p>
+      <h2>Carousels</h2>
+      <p>
+        Carousels are useful for displaying items if you want to save space,
+        the ability to switch between items makes it very space-effective 
+        and it looks professional.
+      </p>
+        <div class="showcase-container">
+            <div id="showcaseSlider" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="showcase-item">
+                                    <span class="showcase-item-placeholder">Item 1</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="showcase-item">
+                                    <span class="showcase-item-placeholder">Item 2</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="showcase-item">
+                                    <span class="showcase-item-placeholder">Item 3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="showcase-item">
+                                    <span class="showcase-item-placeholder">Item 4</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="showcase-item">
+                                    <span class="showcase-item-placeholder">Item 5</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="showcase-item">
+                                    <span class="showcase-item-placeholder">Item 6</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#showcaseSlider" data-bs-slide="prev">
+                    <img src="previous.png" alt="Previous" class="custom-arrow">
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#showcaseSlider" data-bs-slide="next">
+                    <img src="next.png" alt="Next" class="custom-arrow">
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>      
+
+    <div class="container mt-5">
+      <h2 class="grid-title">Grids</h2>
+      <p>
+        Grids are good for showing several items at once and makes
+        it very easy to compare them to eachother if needed.
+        Very versatile since you can increase rows and columns aswell as change the size of
+        the items to include more alternatives.
+      </p>
+      <div class="container border p-3 rounded-4">
+        <div class="row g-3 mb-3 justify-content-center">
+          <div class="col-auto">
+            <div class="fixed-card">
+              <img src="grid_placeholder.png" alt="Item 1" class="fixed-image">
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="fixed-card">
+              <img src="grid_placeholder.png" alt="Item 2" class="fixed-image">
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="fixed-card">
+              <img src="grid_placeholder.png" alt="Item 3" class="fixed-image">
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="fixed-card">
+              <img src="grid_placeholder.png" alt="Item 4" class="fixed-image">
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="fixed-card">
+              <img src="grid_placeholder.png" alt="Item 5" class="fixed-image">
+            </div>
+          </div>
+        </div>
+        <div class="row g-3 mb-3 justify-content-center">
+          <div class="col-auto">
+            <div class="fixed-card">
+              <img src="grid_placeholder.png" alt="Item 6" class="fixed-image">
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="fixed-card">
+              <img src="grid_placeholder.png" alt="Item 7" class="fixed-image">
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="fixed-card">
+              <img src="grid_placeholder.png" alt="Item 8" class="fixed-image">
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="fixed-card">
+              <img src="grid_placeholder.png" alt="Item 9" class="fixed-image">
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="fixed-card">
+              <img src="grid_placeholder.png" alt="Item 10" class="fixed-image">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="footer mt-5">
@@ -195,6 +330,22 @@
         colorbox.style.color = textColor;
       }
     </script>
+
+<script>
+  document.querySelectorAll('.fixed-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.style.transform = 'translateY(-5px)';
+      card.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
+      card.querySelector('.fixed-image').style.transform = 'scale(1.05)';
+    });
+    
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+      card.style.boxShadow = '';
+      card.querySelector('.fixed-image').style.transform = '';
+    });
+  });
+</script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

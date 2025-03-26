@@ -56,6 +56,22 @@ li a {
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
+.section__header{
+  display: flex;
+}
+
+.section__paragraph{
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.section__paragraph--visible{
+  transform: translateY(0);
+  opacity: 1;
+}
+
 p {
   font-size: 18px;
 }
